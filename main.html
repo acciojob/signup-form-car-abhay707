@@ -7,28 +7,34 @@
 </head>
 
 <body>
-
+	<form method="post">
 	<label for="name">Name</label>
 	<input id="name" required type="text" placeholder="Name"/>
 	<br>
 	
 	<label for="email">Email</label>
-	<input id="email" required type="text" placeholder="Email"/>
+	<input id="email" required type="Email" placeholder="Email"/>
 	<br>
 	
 	
-	<input id="gender_m" required type="radio" name="gender"/>
+	<input id="gender_m" required type="radio" name="gender" value="male"/>
 	<label for="gender_m">Male</label>
-	<input id="gender_f" required type="radio" name="gender"/>
+	<input id="gender_f" required type="radio" name="gender" value="female"/>
 	<label for="gender_f">female</label>
 	<br>
 		
 	<label for="cars">Car Brand</label>
-	<select id="cars" required type="select" placeholder="--Please choose an option--">
-		<option>BMW</option>
-		<option>Audi</option>
-		<option>Mercedice</option>
-	</select>
+	<select id="cars" required>
+
+        <option value="">--Please choose an option--</option>
+
+        <option>BMW</option>
+
+        <option>Audi</option>
+
+        <option>Mercedes</option>
+
+    </select>
 	<br>
 
 	<label for="age">Age</label>
@@ -52,6 +58,7 @@
 	<br>
 
 	<button type="submit">submit</button>
+		</form>
 	
 	
     <script type="text/javascript" src="./script.js">
